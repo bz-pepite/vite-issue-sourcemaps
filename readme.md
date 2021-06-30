@@ -1,6 +1,6 @@
 # Describe the bug
 
-The sourcemaps do not work for libraries.
+The sourcemaps seems to not work for some libraries inside an app built by vite.
 There are two packages in the monorepo :
 
 - component-lib : the library containing the react component named "Button". react typescript library. built by vite in library mode.
@@ -12,7 +12,7 @@ If I build 'my-app' and serve the builded code (vite preview), I can't put a bre
 
 # Reproduction
 
-check out code
+checkout code
 
 ## For dev server :
 
@@ -50,7 +50,7 @@ rushx dev
 
 In the library (my-packages/component-lib/vite.config.ts),
 the setting is minify: "esbuild", also tried with true, false and "terser". For all it doesn't work.
-with minify: false, the sourcemap for the library in my-app in developpement server are "empty" are not loaded.
+with minify: false, the sourcemap for the library in my-app in developpement server are "empty" and source code is not availlable in the browser.
 
 With the case minify: "esbuild",
 the sourcemaps in
