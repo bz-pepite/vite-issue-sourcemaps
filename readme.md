@@ -56,4 +56,4 @@ With the case minify: "esbuild",
 the sourcemaps in
 `my-packages/component-lib/dist/component-lib.es.js.map` seem to be coherent with the file `my-packages/component-lib/dist/component-lib.es.js`
 
-But the sourcemaps served by the dev server of "my-app" seem to be coherent with the modified file `component-lib.es.js` served by the dev server.
+But the sourcemaps served by the dev server of "my-app" seem to be not coherent with the modified file `component-lib.es.js` served by the dev server.
