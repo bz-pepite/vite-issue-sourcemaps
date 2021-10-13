@@ -1,7 +1,7 @@
 import { UserConfig } from "vite";
 import path from "path";
 import { defineConfig } from "vite";
-import reactRefresh from "@vitejs/plugin-react-refresh";
+import react from "@vitejs/plugin-react";
 
 import pkg from "./package.json";
 
@@ -40,7 +40,7 @@ export default defineConfig(({ command, mode }) => {
   } else {
     // https://vitejs.dev/config/
     const config: UserConfig = {
-      plugins: [reactRefresh()],
+      plugins: [react()],
       logLevel: "info",
     };
 
